@@ -6,7 +6,7 @@ const app = express();
 const userController = require("./user.service/controllers/user.controller");
 
 //----middleware-------
-const userAuth = require("./middleware/user.auth");
+const userAuth = require("./user.auth");
 
 // require routes
 const userRoutes = require("./user.service/user.routes");

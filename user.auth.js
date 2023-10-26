@@ -1,4 +1,4 @@
-const client = require("../dbConnection");
+const client = require("./dbConnection");
 const jwt = require("jsonwebtoken");
 const env = require("dotenv").config();
 
