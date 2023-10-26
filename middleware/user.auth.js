@@ -1,4 +1,4 @@
-const client = require("../dbConnection.js");
+const client = require("../dbConnection");
 const jwt = require("jsonwebtoken");
 const env = require("dotenv").config();
 
@@ -62,7 +62,7 @@ module.exports = {
           const userEmail = decode.userEmail;
           console.log("email", userEmail);
           // req.userId = userId;
-
+          // client.connect();
           client.query(
             "SELECT * FROM users WHERE email = $1",
             [userEmail], // Use an array to pass parameters securely
